@@ -6,7 +6,7 @@
 
 mw-log "Configuring GNOME"
 
-cp ../overlay/usr/share/glib-2.0/schemas/90_ubuntu-settings.gschema.override \
+cp ../overlay/usr/share/glib-2.0/schemas/cinnamon.gsettings-override \
   /usr/sahre/glib-2.0/schmas/
 
 cp ../overlay/usr/share/icons/MW-icon.png \
