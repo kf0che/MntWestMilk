@@ -22,6 +22,6 @@ cp ../logos/MWM-logo.png $BOOT_LOGO
 
 mw-log "Installing desktop wallpaper"
 cp ../logos/MWW-wallpaper.png /usr/share/backgrounds
-cp ../logos/MWM-wallpaper.png /usr/share/backgrounds/warty-final-ubuntu.png
+cp ../logos/MWM-wallpaper.png /usr/share/backgrounds/warty-final-cinnamom.png
 
 gsettings set org.gnome.desktop.background picture-uri file:////usr/backgrounds/MWM-wallpaper.png
