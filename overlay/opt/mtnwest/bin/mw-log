@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+#
+# Author   : Steve Michael
+# Date     : 04 April 2025
+# Purpose  : Log message to standard out and log file
+
+MW_TEMP_DIR=/tmp/mw
+MW_LOG_FILE=$MW_TEMP_DIR/mw.log
+
+if [ ! -e $MW_TEMP_DIR ]; then
+  mkdir $MW_TEMP_DIR
+  chmod 755 $MW_TEMP_DIR
+fi
+
+if [ ! -e $ET_LOG_FILE ]; then
+  touch $MW_LOG_FILE
+  chmod 666 $MW_LOG_FILE
+fi
+
+if [ $# -lt 1 ]; then
+  echo "Usage $(basename $0) <msg>"
+  echo ""
+  echo "All messages written to: ${MW_LOG_FILE}"
+  exit -1
+fi
+
+TIMESTAMP=`date "+%Y-%m-%d %H:%M:%S"`
+
+echo -e $@
+echo "$TIMESTAMP $@" >> ${MW_LOG_FILE}

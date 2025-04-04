@@ -1,0 +1,22 @@
+#!/bin/bash
+# Author  : Steve Michael
+# Date    : 04 April 2025
+# Purpose : Restore backup to user's home directory.
+
+BACKUP_FILE_PATTERN="etc-user-backup-*.tar.gz"
+USB_MEDIA_MOUNT=/media
+
+options=()
+
+# 1. Search home directory
+echo "Searching ${HOME} for backup files...."
+while IFS= read -r backup; do
+  options+=("${backup}" "")
+done < <(find ~ -type f -name ${BACKUP_FILE_PATTERN} 2> /dev/null)
+
+# 2. Search attached USB drive
+DF_OUT=$(df -h | grep ${USB_MEDIA_MOUNT})
+if [ $? -eq 0 ]; then
+ echo "Searching ${USB_MEDIA_MOUNT} for backup files...."
+  while IFS= read -r backup; do
+    options+=("${backup}" "")
