@@ -32,5 +32,5 @@ ${font DejaVu Sans:bold:size=10}${color #8d5133}${alignc}NETWORK
 ${font DejaVu Sans Mono:size=11}${color yellow}IP: ${execpi 60 /opt//bin/ip} 
 
 
-${font DejaVu Sans:bold:size=9}${color grey}${alignc}${execp /opt/emcomm-tools/bin/mw-system-info release}]];
+${font DejaVu Sans:bold:size=9}${color grey}${alignc}${execp /opt/mtnwest/bin/mw-system-info release}]];
 
