@@ -17,20 +17,20 @@ conky.config = {
 };
 
 conky.text = [[
-${font DejaVu Sans:bold:size=10}${color #8d5133}${alignc}DATE/TIME
+${font DejaVu Sans:bold:size=10}${colorrgb(20, 56, 234)}${alignc}DATE/TIME
 ${font DejaVu Sans Mono:size=11}${color yellow}${alignc}${time %A, %B %d %Y}
 Local: ${alignr}${time %H:%M:%S}
 Mountain: ${alignr}${tztime UTC -6 %H:%M:%S}
 UTC: ${alignr}${tztime UTC %H:%M:%S}
 
-${font DejaVu Sans:bold:size=10}${color #8d5133}${alignc}SYSTEM
+${font DejaVu Sans:bold:size=10}${colorrgb(20, 56, 234)}${alignc}SYSTEM
 ${font DejaVu Sans Mono:size=11}${color yellow}Uptime   : ${uptime}
 CPU Util : ${cpu}%
 Disk Free: ${fs_free /}
 
-${font DejaVu Sans:bold:size=10}${color #8d5133}${alignc}NETWORK
+${font DejaVu Sans:bold:size=10}${colorrgb(20, 56, 234)}${alignc}NETWORK
 ${font DejaVu Sans Mono:size=11}${color yellow}IP: ${execpi 60 /opt//bin/ip} 
 
 
-${font DejaVu Sans:bold:size=9}${color grey}${alignc}${execp /opt/mtnwest/bin/mw-system-info release}]];
+${font DejaVu Sans:bold:size=10}${color grey}${alignc}${execp /opt/mtnwest/bin/mw-system-info release}]];
 
