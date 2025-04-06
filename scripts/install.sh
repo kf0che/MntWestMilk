@@ -13,8 +13,9 @@ exitIfNotRoot
 
 ./install-bash.sh
 ./install-dev-tools.sh
-./install-browser.sh
+./install-min.sh
 ./install-branding.sh
+./import-bookmarks.sh
 
 ./configure-gnome.sh
 ./configure-user.sh 
@@ -24,3 +25,5 @@ exitIfNotRoot
 ./install-conky.sh
 
 ./install-signal.sh
+./anydesk.sh
+./syncthing.sh
