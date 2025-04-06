@@ -15,6 +15,7 @@ exitIfNotRoot
 ./install-dev-tools.sh
 ./install-min.sh
 ./install-branding.sh
+./import-bookmarks.sh
 
 ./configure-gnome.sh
 ./configure-user.sh 
