@@ -10,11 +10,13 @@
 exitIfNotRoot
 
 ./bootstrap.sh
+./install-base.sh
 
 ./install-bash.sh
 ./install-dev-tools.sh
 ./install-min.sh
 ./install-branding.sh
+./install-theme.sh
 ./import-bookmarks.sh
 
 ./configure-gnome.sh
