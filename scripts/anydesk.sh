@@ -1,29 +1,21 @@
 #!/bin/bash
-#
-# Author  : Steve Michael
-# Date    : 04 April 2025
-# Purpose : Install AnyDesk
-set -e
 
-VERSION="6.4.3-1"
-FILE=anydesk_${VERSION}_amd64.deb
+# Update package list and install prerequisites
+sudo apt update
+sudo apt install -y wget gnupg2
 
-mw-log "Installing AnyDesk ${VERSION}..."
+# Add AnyDesk GPG key
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 
-TARGET_PATH="${MW_DIST_DIR}/${FILE}"
+# Add AnyDesk repository
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk.list
 
-if [ ! -e ${TARGET_PATH} ]; then
-  
-  URL="https://anydesk.com/en/downloads/thank-you?dv=deb_64"
+# Update package list again
+sudo apt update
 
-  mw-log "Downloading: ${URL}"
-  curl -s -L -o ${FILE} -- fail ${URL}
+# Install AnyDesk
+sudo apt install -y anydesk
 
-  [ ! -e ${MW_DIST_DIR} } && mkdir ${MW_DIST_DIR}
-  [ ! -e ${MW_SRC_DIR} && mkdir {$MW_SRC_DIR}
-
-  mv -v ${FILE} ${MW_DIST_DIR}
-fi 
-
-mw-log "Installing: ${TARGET_PATH}"
-dpkg -i ${TARGET_PATH}
+# Confirm installation
+echo "AnyDesk installation completed."
+anydesk --version

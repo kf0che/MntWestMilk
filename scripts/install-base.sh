@@ -29,4 +29,5 @@ apt install \
   stow \
   xsel \
   tree \
+  yad \
   -y

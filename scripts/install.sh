@@ -12,7 +12,6 @@ exitIfNotRoot
 ./bootstrap.sh
 ./install-base.sh
 
-./install-bash.sh
 ./install-dev-tools.sh
 ./install-min.sh
 ./install-branding.sh
@@ -29,3 +28,11 @@ exitIfNotRoot
 ./install-signal.sh
 ./anydesk.sh
 ./syncthing.sh
+./zoom.sh
+./install-obsidian.sh
+#./install-obsidian-plugin.sh
+./bleachbit.sh
+
+./gnome-boxes.sh
+
+
