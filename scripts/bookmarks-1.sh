@@ -29,7 +29,7 @@ SELECT 1, id, (SELECT id FROM moz_bookmarks WHERE title = 'Bookmarks Menu'),
        '$BOOKMARK_TITLE', strftime('%s','now')*1000000, strftime('%s','now')*1000000
 FROM moz_places WHERE url = '$BOOKMARK_URL';
 
-INSERT OR IGNORE INTO moz_places (url, title, rev_host, visit_count, hidden, typed, frecency, last_visit_date)
+INSERT OR IGNORE INTO moz_places (url, title, rev_host, visit_count, hidden, typed, frequency, last_visit_date)
 VALUES ('$BOOKMARK_URL', '$BOOKMARK_TITLE', '', 0, 0, 0, 0, strftime('%s','now')*1000000);
 EOF
 

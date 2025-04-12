@@ -2,7 +2,7 @@
 #
 # Author  : Steve Michael
 # Date    : 03 April 2025 
-# Purpose : Global funtions
+# Purpose : Global functions
 #
 ###########################################################################
 

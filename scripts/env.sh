@@ -2,7 +2,7 @@
 #
 # Author  : Steve Michael
 # Date    : 03 April 2025
-# Purpose : Global enviroment variables
+# Purpose : Global environment variables
 
 export MW_HOME=/opt/mtnwest
 export MW_GROUP=mw-data

@@ -17,7 +17,7 @@ Networking
     Add 9.9.9.9 to Primary
     Add 1.1.1.3 & 1.0.0.3 to Secondary
 
-Desktop Enviroment
-3. Change some settings on the Linux desktop enviroment for user.
+Desktop Environment
+3. Change some settings on the Linux desktop environment for user.
     https:://youtu.be/kV8Hu54zhbA?si=A7-03y1x4TdVu_92
 
