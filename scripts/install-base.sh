@@ -5,8 +5,8 @@
 # Purpose   : Install base tools and configuration
 set -e 
 
-mw-log "Installing enviroment variables..."
-cp -v ../overlay/etc/enviroment /etc/
+mw-log "Installing environment variables..."
+cp -v ../overlay/etc/environment /etc/
 
 mw-log "Installing message of the day..."
 cp -v ../overlay/etc/motd /etc/

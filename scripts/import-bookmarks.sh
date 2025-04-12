@@ -3,7 +3,7 @@
 # Script to import bookmarks into Firefox on Linux Mint 22
 
 # Variables
-BOOKMARKS_FILE="/bookmarks.html"  # Path to your bookmarks HTML file (passed as argument)
+BOOKMARKS_FILE="/$HOME/MTNWESTMILK/scripts/bookmarks.html"  # Path to your bookmarks HTML file (passed as argument)
 FIREFOX_DIR="$HOME/.mozilla/firefox"  # Firefox profile directory
 PROFILE_DIR=$(grep -E "Default=.*" "$FIREFOX_DIR/profiles.ini" | cut -d'=' -f2)  # Extract default profile
 FULL_PROFILE_PATH="$FIREFOX_DIR/$PROFILE_DIR"
