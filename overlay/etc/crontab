@@ -32,4 +32,3 @@ SHELL=/bin/sh
 
 # check for broken packages every 7 days
 0 17 * * 6	root	apt-get check
-

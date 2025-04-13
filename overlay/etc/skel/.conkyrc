@@ -33,4 +33,3 @@ ${font DejaVu Sans Mono:size=11}${color yellow}IP: ${execpi 60 /opt//bin/ip}
 
 
 ${font DejaVu Sans:bold:size=10}${color grey}${alignc}${execp /opt/mtnwest/bin/mw-system-info release}]];
-
