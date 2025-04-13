@@ -57,4 +57,3 @@ echo -e "3. ${YELLOW}Press ${WHITE}q${YELLOW} when done viewing the list of file
 read -p "Press any key to view the backup."
 
 tar -tzf ${BACKUP_FILE} | less
-

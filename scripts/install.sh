@@ -34,5 +34,3 @@ exitIfNotRoot
 ./bleachbit.sh
 
 ./gnome-boxes.sh
-
-

@@ -13,4 +13,4 @@ fi
 cp -v -r ../overlay/MW_HOME/* $MW_HOME
 
 mw-log "Setting up permission for shared data access..."
-
+chmod -R 777 $MW_HOME
