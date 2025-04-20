@@ -19,20 +19,6 @@ if ! command -v plasma-desktop &> /dev/null; then
     sudo apt install -y kde-plasma-desktop systemsettings
 fi
 
-# Check if GTK2 is installed
-if ! command -v gtk2 &> /dev/null; then
-    echo "GTK2 is not installed. Installing GTK theme dependencies..."
-    sudo apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
-    exit 1
-fi
-
-# Check if GTK2.0 is installed
-if ! command -v gtk2.0 &> /dev/null; then
-    echo "GTK2.0 is not installed. Installing GTK2.0 theme dependencies..."
-    sudo apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
-    exit 1
-fi
-
 # Check if GTK3.0 is installed
 if ! command -v gtk3.0 &> /dev/null; then
     echo "GTK3.0 is not installed. Installing GTK3.0 theme dependencies..."
@@ -52,14 +38,6 @@ if ! command -v gtk5 &> /dev/null; then
     sudo apt install -y gtk5-engines-murrine gtk5-engines-pixbuf
 else
     echo "GTK5 is already installed."
-fi
-
-# Check if GTK6 is installed
-if ! command -v gtk6 &> /dev/null; then
-    echo "GTK6 is not installed. Installing GTK6 theme dependencies..."
-    sudo apt install -y gtk6-engines-murrine gtk6-engines-pixbuf
-else
-    echo "GTK6 is already installed."
 fi
 
 # Check if git is installed
